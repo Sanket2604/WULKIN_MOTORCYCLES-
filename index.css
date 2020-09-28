@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     cursor: context-menu;
+    
 }
 ::-webkit-scrollbar {
     width: 12px;
@@ -68,6 +69,7 @@ a, a:hover{
     background-color: black;
     height: 100vh;
     width: 100%;
+    border: none;
 }
 .cont1 .img{
     background-image: url(img/soroush-golpoor-kXw6ngvtf_k-unsplash.png);
@@ -78,6 +80,8 @@ a, a:hover{
     height: 100%;
     padding: 0;
     margin: 0;
+    border: none;
+
 }
 .cont1 .img .content{
     position: absolute;
@@ -639,7 +643,8 @@ a, a:hover{
     align-items: center;
 }
 .socialcontainer{
-    padding: 5vh;
+    padding: 5vh 0;
+    border: none;
 }
 .social-icons a {
     display: inline-block;
@@ -652,13 +657,16 @@ a, a:hover{
     transition: 0.5s;
     font-size: 40px;
     margin-right: 20px;
+    border: none;
 }
 .social-icons a .fab, .social-icons a .far{
     line-height: 60px;
     cursor: pointer;
+    border: none;
 }
 .social-icons a:hover {
     transform: scale(1.1);
+    border: none;
 }
 @media only screen and (max-width: 765px) {
     
@@ -670,9 +678,14 @@ a, a:hover{
     }
     .nav-link{
         font-size: 18px;
+        color: rgb(73, 73, 73);
     }
-    .navbar-collapse{
-        background-color: rgba(247, 247, 247, 0.98);
+    .navbar .navbar-collapse{
+        background-color: rgba(247, 247, 247, 0.8);
+        text-align: center;
+    }
+    .navbar.active .navbar-collapse{
+        background-color: rgba(247, 247, 247, 0.9);
         text-align: center;
     }
     .cont1{
@@ -948,7 +961,7 @@ a, a:hover{
         font-size: 16px;
     }
     .socialcontainer{
-        padding: 5vh;
+        padding: 5vh 0;
     }
     .social-icons a {
         width: 28px;
